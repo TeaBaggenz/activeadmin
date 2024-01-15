@@ -9,6 +9,7 @@ gemfile = ENV["BUNDLE_GEMFILE"]
 if gemfile.nil? || File.expand_path(gemfile) == File.expand_path("Gemfile")
   import "tasks/docs.rake"
   import "tasks/release.rake"
+  import "tasks/dependencies.rake"
 end
 
 task default: :test
